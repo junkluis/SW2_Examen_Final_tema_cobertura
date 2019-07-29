@@ -8,5 +8,5 @@ class FunctionsTestCase(TestCase):
         pass
 
     # Prueba de una vista.
-    def test_agregar_carrito(self):
+    def calcular_descuento_mayores_edad(self):
         pass
