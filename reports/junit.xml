@@ -1,0 +1,1 @@
+<testsuite errors="0" failures="0" name="Django Project Tests" skips="0" tests="1" time="0.001"><testcase classname="funciones.tests.FunctionsTestCase" name="test_agregar_carrito" time="0.000000" /></testsuite>
