@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="Test-20190804175731" tests="3" time="0.004">
+	<testcase classname="Test" name="test_descuento_no_valido" time="0.001"/>
+	<testcase classname="Test" name="test_nombre_casos_prueba" time="0.001"/>
+	<testcase classname="Test" name="test_descuento_para_mayores" time="0.002">
+		<error message="50.050000000000004 != 250.5" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 26, in test_descuento_para_mayores
+    self.assertEqual(resultado, 250.5)
+AssertionError: 50.050000000000004 != 250.5
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

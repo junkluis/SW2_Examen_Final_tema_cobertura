@@ -12,14 +12,11 @@ class Test(unittest.TestCase):
 	def test_nombre_casos_prueba(self):
 		self.assertEqual('','')
 
-
+	#opcion 5
 	def test_descuento_no_valido(self):
-		resultado = descuentos.calcular_descuento(0,0,0)
+		mensaje, resultado = descuentos.calcular_descuento(0,0,0)
 		self.assertEqual(resultado, 0)
-
-	def test_descuento_para_mayores(self):
-		resultado = descuentos.calcular_descuento(76,1,501)
-		self.assertEqual(resultado, 0)
+		self.assertEqual(mensaje, "Descuento no valido")
 
 
 if __name__ == '__main__':

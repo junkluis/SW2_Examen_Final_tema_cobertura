@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="Test-20190804181257" tests="6" time="0.005">
+	<testcase classname="Test" name="test_descuento_no_valido" time="0.001"/>
+	<testcase classname="Test" name="test_descuento_para_mayores" time="0.001"/>
+	<testcase classname="Test" name="test_descuento_para_mayores2" time="0.000"/>
+	<testcase classname="Test" name="test_descuento_para_mayores3" time="0.001"/>
+	<testcase classname="Test" name="test_descuento_para_mayores4" time="0.002"/>
+	<testcase classname="Test" name="test_nombre_casos_prueba" time="0.000"/>
+	<system-out>
+<![CDATA[op5
+op1
+op2
+op4
+op3
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
