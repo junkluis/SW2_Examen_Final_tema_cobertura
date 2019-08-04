@@ -3,8 +3,11 @@ from __future__ import unicode_literals
 
 import unittest
 import src.descuento as descuentos
+import xmlrunner
+
 
 class Test(unittest.TestCase):
+
 	#Incluya una pequeña descripción de lo que se prueba.
 	def test_nombre_casos_prueba(self):
 		self.assertEqual('','')
@@ -15,7 +18,5 @@ class Test(unittest.TestCase):
 		self.assertEqual(resultado, 0)
 
 
-
-
 if __name__ == '__main__':
-	unittest.main()
+	unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
