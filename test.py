@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
+"""Archivo de pruebas."""
 from __future__ import unicode_literals
 
 import unittest
-import src.descuento as descuentos
 import xmlrunner
+import src.descuento as descuentos
 
 
-class Test(unittest.TestCase):
+
+class Test_descuentos(unittest.TestCase):
+    ''' Pruebas para calculo del descuento para clientes '''
 
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
@@ -40,7 +43,7 @@ class Test(unittest.TestCase):
         ''' breve descripcion de la prueba '''
         mensaje, descuento = descuentos.calcular_descuento(49, 5001, 0)
         self.assertEqual(mensaje, 'No aplica')
-        self.assertEqual(descuento, 0)    
+        self.assertEqual(descuento, 0)
 
     def test_calcular_descuento_mayores_edad(self):
         ''' breve descripcion de la prueba '''
@@ -71,10 +74,6 @@ class Test(unittest.TestCase):
         mensaje, descuento = descuentos.calcular_descuento(0, 0, 0)
         self.assertEqual(mensaje, 'Descuento no valido')
         self.assertEqual(descuento, 0)
-
-
-
-    
 
 
 if __name__ == '__main__':
