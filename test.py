@@ -32,7 +32,31 @@ class Test(unittest.TestCase):
 		self.assertEqual(mensaje, 'Descuento especiales')
 		self.assertEqual(descuento, 350.7)
 
-	
+	def test_calcular_descuento_mayores_edad(self):
+		mensaje, descuento = descuentos.calcular_descuento(81,1002,2)
+		self.assertEqual(mensaje, 'Descuento para mayores de edad')
+		self.assertEqual(descuento, 250.5)
+
+	def test_calcular_descuento_mayores_edad_grandes_valores(self):
+		mensaje, descuento = descuentos.calcular_descuento(66,2502,0)
+		self.assertEqual(mensaje, 'Descuento para mayores de edad')
+		self.assertEqual(descuento, 1251.0)
+
+	def test_calcular_descuento_clientes_generales(self):
+		mensaje, descuento = descuentos.calcular_descuento(66,2502,3)
+		self.assertEqual(mensaje, 'Descuento para clientes')
+		self.assertEqual(descuento, 25.02)
+
+	def test_calcular_descuento_clientes_generales_valor_mayor_a_500(self):
+		mensaje, descuento = descuentos.calcular_descuento(66,5001,3)
+		self.assertEqual(mensaje, 'Descuento para clientes')
+		self.assertEqual(descuento, 100.02)
+
+	def test_calcular_descuento_no_valido(self):
+		mensaje, descuento = descuentos.calcular_descuento(0,0,0)
+		self.assertEqual(mensaje, 'Descuento no valido')
+		self.assertEqual(descuento, 0)
+
 
 
 	
