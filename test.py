@@ -8,7 +8,7 @@ import src.descuento as descuentos
 
 
 
-class Test_descuentos(unittest.TestCase):
+class TestDescuentos(unittest.TestCase):
     ''' Pruebas para calculo del descuento para clientes '''
 
     def test_nombre_casos_prueba(self):
