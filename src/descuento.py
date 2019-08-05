@@ -21,7 +21,7 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
 				else:
 					descuento = valor_cotizado*(0.05*dependientes)
 
-			elif( (50<=edad<=65) or (dependientes>=2 and valor_cotizado>2500) or (valor_cotizado>=5000) ):
+			elif( (50<=edad<=65) or (valor_cotizado>=5000) ):
 				mensaje = "Descuento especiales"
 				descuento = valor_cotizado*(0.35)
 
