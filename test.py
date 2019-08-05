@@ -33,9 +33,9 @@ class Test(unittest.TestCase):
 		self.assertEqual(descuento, 350.7)
 
 	def test_calcular_descuentos_especiales_valores_altos(self):
-		mensaje, descuento = descuentos.calcular_descuento(51,5002,2)
+		mensaje, descuento = descuentos.calcular_descuento(51,5001,2)
 		self.assertEqual(mensaje, 'Descuento especiales')
-		self.assertEqual(descuento, 350.7)
+		self.assertEqual(descuento, 1750.35)
 
 	def test_calcular_descuento_mayores_edad(self):
 		mensaje, descuento = descuentos.calcular_descuento(81,1002,2)
