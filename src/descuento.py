@@ -43,30 +43,5 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
 	return mensaje, descuento
 
 
-if __name__ == "__main__":
-
-	#Descuento clientes iniciales
-	print(calcular_descuento(19,502,0))
-	print(calcular_descuento(28,752,0))
-
-	#Descento para familia
-	print(calcular_descuento(36,1002,2))
-	print(calcular_descuento(28,1002,4))
-
-	#Descento especiales
-	print(calcular_descuento(51,1002,2))
-	print(calcular_descuento(34,2505,2))
-	print(calcular_descuento(34,5001,0))
-	
-	#Descento mayores de edad
-	print(calcular_descuento(81,1002,2))
-	print(calcular_descuento(66,2502,0))
-
-	#Descento cliente general
-	print(calcular_descuento(66,2502,3))
-
-	#Descento no validos
-	print(calcular_descuento(0,0,0))
-
 
 
