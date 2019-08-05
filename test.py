@@ -27,6 +27,17 @@ class Test(unittest.TestCase):
 		self.assertEqual(mensaje, 'Descuento para familias')
 		self.assertEqual(descuento, 601.2)
 
+	def test_calcular_descuentos_especiales(self):
+		mensaje, descuento = descuentos.calcular_descuento(51,1002,2)
+		self.assertEqual(mensaje, 'Descuento especiales')
+		self.assertEqual(descuento, 350.7)
+
+	def test_calcular_no_aplicable(self):
+		mensaje, descuento = descuentos.calcular_descuento(49,5001,0)
+		self.assertEqual(mensaje, 'No aplica')
+		self.assertEqual(descuento, 0)	
+
+
 
 	
 
