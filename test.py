@@ -37,6 +37,16 @@ class Test(unittest.TestCase):
 		self.assertEqual(mensaje, 'No aplica')
 		self.assertEqual(descuento, 0)	
 
+	def test_calcular_descuento_mayores_edad(self):
+		mensaje, descuento = descuentos.calcular_descuento(81,1002,2)
+		self.assertEqual(mensaje, 'Descuento para mayores de edad')
+		self.assertEqual(descuento, 250.5)
+
+	def test_calcular_descuento_mayores_edad_altos_valores(self):
+		mensaje, descuento = descuentos.calcular_descuento(66,2502,0)
+		self.assertEqual(mensaje, 'Descuento para mayores de edad')
+		self.assertEqual(descuento, 1251.0)
+
 
 
 	
