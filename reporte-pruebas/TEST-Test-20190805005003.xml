@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="Test-20190805005003" tests="9" time="0.010">
+	<testcase classname="Test" name="test_calcular_descuento_cliente_jovenes" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuento_clientes_generales" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuento_familias_grandes" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuento_mayores_edad" time="0.000"/>
+	<testcase classname="Test" name="test_calcular_descuento_mayores_edad_grandes_valores" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuento_no_valido" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuentos_especiales" time="0.001"/>
+	<testcase classname="Test" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="Test" name="test_calcular_descuento_familias" time="0.004">
+		<error message="local variable 'mensaje' referenced before assignment" type="UnboundLocalError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 22, in test_calcular_descuento_familias
+    mensaje, descuento = descuentos.calcular_descuento(35,1002,1)
+  File "C:\Users\Luis ZR\Desktop\INGENIERIA DE SOFTWARE 2\EXAMEN\SW2_Examen_Final_tema_cobertura\src\descuento.py", line 42, in calcular_descuento
+    return mensaje, descuento
+UnboundLocalError: local variable 'mensaje' referenced before assignment
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[6
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
