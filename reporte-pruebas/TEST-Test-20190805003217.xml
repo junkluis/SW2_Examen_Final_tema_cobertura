@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="Test-20190805003217" tests="6" time="0.006">
+	<testcase classname="Test" name="test_calcular_descuento_cliente_jovenes" time="0.000"/>
+	<testcase classname="Test" name="test_calcular_descuento_familias" time="0.001"/>
+	<testcase classname="Test" name="test_calcular_descuento_mayores_edad" time="0.000"/>
+	<testcase classname="Test" name="test_calcular_descuento_no_valido" time="0.001"/>
+	<testcase classname="Test" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="Test" name="test_calcular_descuento_clientes_generales" time="0.004">
+		<error message="'Descuento para mayores de edad' != 'Descuento para clientes'
+- Descuento para mayores de edad
++ Descuento para clientes
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 38, in test_calcular_descuento_clientes_generales
+    self.assertEqual(mensaje, 'Descuento para clientes')
+AssertionError: 'Descuento para mayores de edad' != 'Descuento para clientes'
+- Descuento para mayores de edad
++ Descuento para clientes
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
