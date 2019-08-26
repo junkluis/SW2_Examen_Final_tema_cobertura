@@ -8,7 +8,8 @@
 
 2. Buscar y modificar la tarea en Jenkins con su nombre y apellido, y configure su rama para el análisis. 
 3. Realizar las pruebas unitarias suficientes para lograr una cobertura total (100%). Modificar el archivo **test.py**
-4. Una vez agregada las pruebas exitosamente, suba los cambios en su rama y ejecute la tarea en Jenkins para visualizar su avance.
+4. Modificar los archivos **src/descuento.pyp y test.py** para mejorar la calidad de código segun standar **Pylint**.
+5. Una vez agregada las pruebas exitosamente, suba los cambios en su rama y ejecute la tarea en Jenkins para visualizar su avance.
 
 		git push origin [nombre_apellido1_apellido2]
 
