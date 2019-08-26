@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestDescuentos-20190826083053" tests="3" time="0.003">
+	<testcase classname="TestDescuentos" name="test_dependientes_invalidos" time="0.002"/>
+	<testcase classname="TestDescuentos" name="test_edad_invalida" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_valor_invalido" time="0.000"/>
+	<system-out>
+<![CDATA[('Descuento no valido', 0)
+('Descuento no valido', 0)
+('Descuento no valido', 0)
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

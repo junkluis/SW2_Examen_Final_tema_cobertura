@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826085432" tests="12" time="0.011">
+	<testcase classname="TestDescuentos" name="test_dependientes_invalidos" time="0.002"/>
+	<testcase classname="TestDescuentos" name="test_edad_invalida" time="0.002"/>
+	<testcase classname="TestDescuentos" name="test_validos_dos_dos" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_validos_dos_tres" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_validos_dos_uno_dos" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_validos_dos_uno_uno" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_validos_tres_dos_dos" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_validos_tres_uno_uno" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_validos_uno_dos" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_validos_uno_uno" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_valor_invalido" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_validos_cuatro_uno" time="0.002">
+		<error message="Tuples differ: ('Descuento para clientes', 100.02) != ('Descuento para mayores de edad', 2500.5)
+
+First differing element 0:
+'Descuento para clientes'
+'Descuento para mayores de edad'
+
+- ('Descuento para clientes', 100.02)
++ ('Descuento para mayores de edad', 2500.5)" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 120, in test_validos_cuatro_uno
+    self.assertEqual(( "Descuento para clientes", valor_cotizado*(0.02)), retorno)
+AssertionError: Tuples differ: ('Descuento para clientes', 100.02) != ('Descuento para mayores de edad', 2500.5)
+
+First differing element 0:
+'Descuento para clientes'
+'Descuento para mayores de edad'
+
+- ('Descuento para clientes', 100.02)
++ ('Descuento para mayores de edad', 2500.5)
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[('Descuento no valido', 0)
+('Descuento no valido', 0)
+('Descuento para mayores de edad', 2500.5)
+('Descuento especiales', 420.0)
+('No aplica', 0)
+('Descuento para familias', 60.0)
+('Descuento para familias', 960.0)
+('Descuento para mayores de edad', 499.75)
+('Descuento para mayores de edad', 1000.5)
+('Descuento clientes iniciales', 156.0)
+('Descuento clientes iniciales', 120.0)
+('Descuento no valido', 0)
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
