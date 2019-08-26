@@ -12,15 +12,15 @@
 
 		git push origin [nombre_apellido1_apellido2]
 
-Objetivo
+## Objetivo
 
 <table style="width:100%">
 	<tr>
 		<td>Tema 1: Lograr una cobertura por CONDICIONALES/RAMAS del 100%</td>
-		<td></td>
+		<td>Tema 2: Alcanzar un refactorin con Pylint del 9.69/10 (Solo 1 error Pylint permitido)</td>
 	</tr>
 	<tr>
 		<td><img src="https://i.ibb.co/K7vtKNf/cobertura.png" width="400"></td>
-		<td><img src="https://i.ibb.co/KXdWHg7/pylint.png" width="400"></td>
+		<td><img src="https://i.ibb.co/KXdWHg7/pylint.png" width="500"></td>
 	</tr>
 </table>
