@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826085802" tests="7" time="0.000">
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_especiales" time="0.000">
+		<error message="'Descuento para clientes' != 'No aplica'
+- Descuento para clientes
++ No aplica
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 62, in test_descuento_especiales
+    self.assertEqual(mensaje_obtenido, mensaje_esperado)
+AssertionError: 'Descuento para clientes' != 'No aplica'
+- Descuento para clientes
++ No aplica
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

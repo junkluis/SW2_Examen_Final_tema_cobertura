@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826085214" tests="5" time="0.000">
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000">
+		<error message="'Descuento clientes iniciales' != 'Descuento para familias'
+- Descuento clientes iniciales
++ Descuento para familias
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 38, in test_descuento_familias1
+    self.assertEqual(mensaje_obtenido, mensaje_esperado)
+AssertionError: 'Descuento clientes iniciales' != 'Descuento para familias'
+- Descuento clientes iniciales
++ Descuento para familias
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
