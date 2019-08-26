@@ -80,6 +80,42 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(mensaje, 'No aplica')
         self.assertEqual(descuento, 0)
 
+    def test_mayor_edad_1(self):
+        ''' Caso de prueba '''
+        valor_cotizado = 1200
+        dependientes = 0
+        mensaje, descuento = descuentos.calcular_descuento(
+            85, valor_cotizado, dependientes)
+        self.assertEqual(mensaje, 'Descuento para mayores de edad')
+        self.assertEqual(descuento, valor_cotizado*0.25)
+    
+    def test_mayor_edad_2(self):
+        ''' Caso de prueba '''
+        valor_cotizado = 2500
+        dependientes = 0
+        mensaje, descuento = descuentos.calcular_descuento(
+            70, valor_cotizado, dependientes)
+        self.assertEqual(mensaje, 'Descuento para mayores de edad')
+        self.assertEqual(descuento, valor_cotizado*0.5)
+
+    def test_clientes_1(self):
+        ''' Caso de prueba '''
+        valor_cotizado = 2500
+        dependientes = 0
+        mensaje, descuento = descuentos.calcular_descuento(
+            27, valor_cotizado, dependientes)
+        self.assertEqual(mensaje, 'Descuento para clientes')
+        self.assertEqual(descuento, valor_cotizado*0.01)
+
+    def test_clientes_2(self):
+        ''' Caso de prueba '''
+        valor_cotizado = 6000
+        dependientes = 0
+        mensaje, descuento = descuentos.calcular_descuento(
+            27, valor_cotizado, dependientes)
+        self.assertEqual(mensaje, 'Descuento para clientes')
+        self.assertEqual(descuento, valor_cotizado*0.02)
+
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
