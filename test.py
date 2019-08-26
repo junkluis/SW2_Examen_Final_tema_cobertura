@@ -40,6 +40,9 @@ class TestDescuentos(unittest.TestCase):
         mensaje8, descuento8 = descuentos.calcular_descuento(66, 5000, 1)
         self.assertEqual('Descuento para clientes', mensaje8)
         self.assertEqual(100, descuento8)
+        mensaje9, descuento9 = descuentos.calcular_descuento(12, 700, 5)
+        self.assertEqual('Descuento no valido', mensaje9)
+        self.assertEqual(0, descuento9)
         
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))

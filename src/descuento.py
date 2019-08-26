@@ -47,6 +47,5 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
     else:
         mensaje = "Descuento no valido"
         descuento = 0
-        descuento = 0
 
     return mensaje, descuento
