@@ -40,7 +40,7 @@ class TestDescuentos(unittest.TestCase):
         mensaje3, descuento3 = descuentos.calcular_descuento(50, 2000, 0)
         self.assertEqual('Descuento especiales', mensaje3)
         self.assertEqual(700, descuento3)
-    
+
     def test_no_aplica(self):
         '''No aplica descuento'''
         mensaje4, descuento4 = descuentos.calcular_descuento(40, 1001, 0)
