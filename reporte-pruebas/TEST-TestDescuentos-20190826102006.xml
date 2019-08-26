@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestDescuentos-20190826102006" tests="6" time="0.000">
+	<testcase classname="TestDescuentos" name="test_comprobar_variables" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables3" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables4" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables5" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables6" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
