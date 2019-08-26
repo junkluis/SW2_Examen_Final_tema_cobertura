@@ -16,31 +16,57 @@ class TestDescuentos(unittest.TestCase):
         mensaje, descuento = descuentos.calcular_descuento(17, 500, 0)
         self.assertEqual('Descuento no valido', mensaje)
         self.assertNotEqual(9, descuento)
+
+    def test_clientes_iniciales(self):
+        '''Desceunto para clientes iniciales'''
         mensaje1, descuento1 = descuentos.calcular_descuento(19, 751, 0)
         self.assertEqual('Descuento clientes iniciales', mensaje1)
         self.assertNotEqual(20, descuento1)
+
+    def test_descuento_familias(self):
+        '''Descuento para familias'''
+        mensaje2, descuento2 = descuentos.calcular_descuento(40, 1001, 6)
+        self.assertEqual('Descuento para familias', mensaje2)
+        self.assertEqual(250.25, descuento2)
+
+    def test_para_familias(self):
+        '''Descuento para familias tipo 2'''
         mensaje2, descuento2 = descuentos.calcular_descuento(40, 1001, 5)
         self.assertEqual('Descuento para familias', mensaje2)
         self.assertEqual(250.25, descuento2)
+
+    def test_descuento_especiales(self):
+        '''Descuento especiales'''
         mensaje3, descuento3 = descuentos.calcular_descuento(50, 2000, 0)
         self.assertEqual('Descuento especiales', mensaje3)
         self.assertEqual(700, descuento3)
+    
+    def test_no_aplica(self):
+        '''No aplica descuento'''
         mensaje4, descuento4 = descuentos.calcular_descuento(40, 1001, 0)
         self.assertEqual('No aplica', mensaje4)
         self.assertEqual(0, descuento4)
+
+    def test_descuento_mayores_edad(self):
+        '''Descuento para mayores de edad'''
         mensaje5, descuento5 = descuentos.calcular_descuento(81, 1001, 0)
         self.assertEqual('Descuento para mayores de edad', mensaje5)
         self.assertEqual(250.25, descuento5)
+
+    def test_descuento_mayores_edad(self):
+        '''Descuento para mayores de edad tipo 2'''
         mensaje6, descuento6 = descuentos.calcular_descuento(81, 2001, 5)
         self.assertEqual('Descuento para mayores de edad', mensaje6)
         self.assertEqual(1000.5, descuento6)
-        
+
     def test_descuento_clientes(self):
+        '''Descuento para clientes'''
         mensaje7, descuento7 = descuentos.calcular_descuento(28, 700, 5)
         self.assertEqual('Descuento para clientes', mensaje7)
         self.assertEqual(7, descuento7)
 
     def test_descuento_para_clientes(self):
+        '''Descuento para clientes tipo 2'''
         mensaje8, descuento8 = descuentos.calcular_descuento(66, 5000, 1)
         self.assertEqual('Descuento para clientes', mensaje8)
         self.assertEqual(100, descuento8)
