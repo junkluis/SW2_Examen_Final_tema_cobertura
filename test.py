@@ -14,7 +14,7 @@ class TestDescuentos(unittest.TestCase):
     ''' Pruebas para calculo del descuento para clientes '''
 
     def test_descuento1(self):
-        edad =20
+        edad = 20
         valor_cotizado = 600
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -23,7 +23,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento2(self):
-        edad =35
+        edad = 35
         valor_cotizado = 800
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -32,7 +32,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_familias1(self):
-        edad =35
+        edad = 35
         valor_cotizado = 1200
         dependientes = 1
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -41,7 +41,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_familias2(self):
-        edad =35
+        edad = 35
         valor_cotizado = 1200
         dependientes = 6
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -52,7 +52,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_especiales(self):
-        edad =50
+        edad = 50
         valor_cotizado = 1200
         dependientes = 1
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -61,16 +61,16 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_no_aplica(self):
-        edad =45
+        edad = 30
         valor_cotizado = 1200
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         mensaje_esperado= "No aplica"
         descuento_esperado = valor_cotizado*0
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
-
+   
     def test_descuento_mayores_edad1(self):
-        edad =75
+        edad = 75
         valor_cotizado = 2500
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -79,7 +79,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_mayores_edad2(self):
-        edad =80
+        edad = 80
         valor_cotizado = 1800
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -88,7 +88,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_clientes1(self):
-        edad =70
+        edad = 70
         valor_cotizado = 6000
         dependientes = 1
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -97,7 +97,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_clientes1(self):
-        edad =70
+        edad = 70
         valor_cotizado = 4000
         dependientes = 1
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -106,7 +106,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_no_valido1(self):
-        edad =18
+        edad = 18
         valor_cotizado = 600
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -115,7 +115,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_no_valido2(self):
-        edad =35
+        edad = 35
         valor_cotizado = 400
         dependientes = 0
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
@@ -124,8 +124,8 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
     def test_descuento_no_valido3(self):
-        edad =35
-        valor_cotizado = 400
+        edad = 35
+        valor_cotizado = 8000
         dependientes = -1
         mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         mensaje_esperado= "Descuento no valido"

@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826094511" tests="13" time="0.000">
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_clientes1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_aplica1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido3" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_aplica2" time="0.000">
+		<error message="Lists differ: ['Descuento para familias', 60.0] != ['No aplica', 0]
+
+First differing element 0:
+'Descuento para familias'
+'No aplica'
+
+- ['Descuento para familias', 60.0]
++ ['No aplica', 0]" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 79, in test_descuento_no_aplica2
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+AssertionError: Lists differ: ['Descuento para familias', 60.0] != ['No aplica', 0]
+
+First differing element 0:
+'Descuento para familias'
+'No aplica'
+
+- ['Descuento para familias', 60.0]
++ ['No aplica', 0]
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
