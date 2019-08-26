@@ -33,23 +33,14 @@ class TestDescuentos(unittest.TestCase):
         ''' Caso de prueba '''
         edad = 51
         valor_cotizado = 1001
-        dependientes = 7
-        mjs_esperado = ("Descuento para familias", 700.7)
-        mjs = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
-        self.assertEqual(mjs, mjs_esperado)
-
-    def test_mayor_dependiente_5(self):
-        ''' Caso de prueba '''
-        edad = 51
-        valor_cotizado = 1001
-        dependientes = 5
-        mjs_esperado = ("Descuento para familias", 250.25)
+        dependientes = 4
+        mjs_esperado = ("Descuento para familias", 200.20000000000002)
         mjs = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         self.assertEqual(mjs, mjs_esperado)
 
     def test_mayor_dependiente_3(self):
         ''' Caso de prueba '''
-        edad = 51
+        edad = 65
         valor_cotizado = 1001
         dependientes = 3
         mjs_esperado = ('Descuento especiales', 350.34999999999997)
@@ -86,9 +77,9 @@ class TestDescuentos(unittest.TestCase):
     def test_edad_69_dependiente_1(self):
         ''' Caso de prueba '''
         edad = 69
-        valor_cotizado = 5001
+        valor_cotizado = 5000
         dependientes = 1
-        mjs_esperado = ("Descuento para clientes", 100.02)
+        mjs_esperado = ("Descuento para clientes", 100.0)
         mjs = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         self.assertEqual(mjs, mjs_esperado)
 
