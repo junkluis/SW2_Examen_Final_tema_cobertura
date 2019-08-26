@@ -117,7 +117,7 @@ class TestDescuentos(unittest.TestCase):
         dependientes = 1
         retorno = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         print(retorno)
-        self.assertEqual(( "Descuento para clientes", valor_cotizado*(0.02)), retorno)
+        self.assertEqual(("Descuento para clientes", valor_cotizado*(0.02)), retorno)
 
     def test_validos_cuatro_dos(self):
         '''Prueba en caso de dependientes inválidos'''
@@ -126,7 +126,7 @@ class TestDescuentos(unittest.TestCase):
         dependientes = 1
         retorno = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
         print(retorno)
-        self.assertEqual(( "Descuento para clientes", valor_cotizado*(0.01)), retorno)
+        self.assertEqual(("Descuento para clientes", valor_cotizado*(0.01)), retorno)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
