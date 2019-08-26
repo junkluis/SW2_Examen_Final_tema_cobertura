@@ -16,6 +16,10 @@ class TestDescuentos(unittest.TestCase):
         msj_esperado = 'Descuento clientes iniciales'
         self.assertEqual(msj_esperado, mensaje)
 
+    def test_comprobar_variables(self): 
+        mensaje, descuento = calcular_descuento(16,400,0)
+        msj_esperado = 'Descuento no valido'
+        self.assertEqual(msj_esperado, mensaje)
 
 
 if __name__ == '__main__':
