@@ -17,10 +17,10 @@ Objetivo
 <table style="width:100%">
 	<tr>
 		<td>Tema 1: Lograr una cobertura por CONDICIONALES/RAMAS del 100%</td>
-		<td><img src="https://i.ibb.co/K7vtKNf/cobertura.png" width="400"></td>
+		<td></td>
 	</tr>
 	<tr>
-		<td>Tema 2: Lograr un refactoring con Pylint del 9.69/10 (Solo 1 falta Pylint permitida)</td>
 		<td><img src="https://i.ibb.co/K7vtKNf/cobertura.png" width="400"></td>
+		<td><img src="https://i.ibb.co/KXdWHg7/pylint.png" width="400"></td>
 	</tr>
 </table>
