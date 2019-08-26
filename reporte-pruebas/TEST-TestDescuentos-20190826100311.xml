@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<testsuite errors="2" failures="0" name="TestDescuentos-20190826100311" tests="4" time="0.000">
+	<testcase classname="TestDescuentos" name="test_comprobar_variables" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables3" time="0.000">
+		<error message="'Descuento para familias' != 'Descuento no valido'
+- Descuento para familias
++ Descuento no valido
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 27, in test_comprobar_variables3
+    self.assertEqual(msj_esperado, mensaje)
+AssertionError: 'Descuento para familias' != 'Descuento no valido'
+- Descuento para familias
++ Descuento no valido
+
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables4" time="0.000">
+		<error message="'Descuento especiales' != 'Descuento no valido'
+- Descuento especiales
++ Descuento no valido
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 32, in test_comprobar_variables4
+    self.assertEqual(msj_esperado, mensaje)
+AssertionError: 'Descuento especiales' != 'Descuento no valido'
+- Descuento especiales
++ Descuento no valido
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
