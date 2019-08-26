@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestDescuentos-20190826091717" tests="4" time="0.000">
+	<testcase classname="TestDescuentos" name="test_dependientes_menor_cero" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_menor_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_valor_cotizado_menor" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

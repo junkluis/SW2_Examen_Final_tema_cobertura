@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826091413" tests="2" time="0.001">
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_menor_edad" time="0.001">
+		<error message="Tuples differ: ('Descuento no valido', 0) != ('Descuento clientes iniciales', 0)
+
+First differing element 0:
+'Descuento no valido'
+'Descuento clientes iniciales'
+
+- ('Descuento no valido', 0)
++ ('Descuento clientes iniciales', 0)" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 20, in test_descuento_menor_edad
+    self.assertEqual(descuentos.calcular_descuento(17, 800, 1), ('Descuento clientes iniciales', 0))
+AssertionError: Tuples differ: ('Descuento no valido', 0) != ('Descuento clientes iniciales', 0)
+
+First differing element 0:
+'Descuento no valido'
+'Descuento clientes iniciales'
+
+- ('Descuento no valido', 0)
++ ('Descuento clientes iniciales', 0)
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

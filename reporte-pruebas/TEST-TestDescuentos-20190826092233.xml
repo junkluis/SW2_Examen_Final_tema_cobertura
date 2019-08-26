@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826092233" tests="7" time="0.001">
+	<testcase classname="TestDescuentos" name="test_dependientes_menor_cero" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_menor_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_todos_valores_no_validos" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_todos_valores_validos" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_valor_cotizado_menor" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias" time="0.001">
+		<error message="Tuples differ: ('Descuento clientes iniciales', 180.0) != ('Descuento para familias', 0)
+
+First differing element 0:
+'Descuento clientes iniciales'
+'Descuento para familias'
+
+- ('Descuento clientes iniciales', 180.0)
++ ('Descuento para familias', 0)" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 40, in test_descuento_familias
+    self.assertEqual(descuentos.calcular_descuento(37, 900, 3), ('Descuento para familias', 0))
+AssertionError: Tuples differ: ('Descuento clientes iniciales', 180.0) != ('Descuento para familias', 0)
+
+First differing element 0:
+'Descuento clientes iniciales'
+'Descuento para familias'
+
+- ('Descuento clientes iniciales', 180.0)
++ ('Descuento para familias', 0)
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
