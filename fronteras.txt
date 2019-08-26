@@ -1,0 +1,8 @@
+valor cotizado > 500 -> Válido
+valor cotizado <= 500 -> Inválido
+
+	
+
+dependientes >= 0 -> Válido
+dependientes < 0 -> Inválido
+
