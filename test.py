@@ -23,9 +23,9 @@ class TestDescuentos(unittest.TestCase):
 
     def test_descuento_clientes_1(self):
         '''Caso 2: Descuento clientes (valor_cotizado >= 5000)'''
-        mensaje, descuento = descuentos.calcular_descuento(18, 5000, 1)
-        self.assertEqual('Descuento para clientes', mensaje)
-        self.assertEqual(100, descuento)
+        mensaje, descuento = descuentos.calcular_descuento(19, 5000, 1)
+        self.assertEqual('Descuento clientes iniciales', mensaje)
+        self.assertEqual(1000, descuento)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
