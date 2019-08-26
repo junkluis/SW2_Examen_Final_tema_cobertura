@@ -3,11 +3,8 @@
 
 from __future__ import unicode_literals
 
-"""
-Docstring
-"""
 def calcular_descuento(edad, valor_cotizado, dependientes):
-    #Calcular el descuento considerando la edad, numero de dependientes y valor cotizado
+    """Calcular el descuento considerando la edad, numero de dependientes y valor cotizado"""
     mensaje = ""
     descuento = 0
     if(edad > 18 and valor_cotizado > 500 and dependientes >= 0):
@@ -17,11 +14,11 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
         elif((valor_cotizado > 1000) and (27 < edad <= 65)):
             if((35 <= edad < 50 and dependientes > 0) or (dependientes >= 4)):
                 mensaje = "Descuento para familias"
-                if (dependientes >= 6):
+                if dependientes >= 6:
                     descuento = valor_cotizado*(0.1*dependientes)
                 else:
                     descuento = valor_cotizado*(0.05*dependientes)
-            elif(50 <= edad <= 65):
+            elif 50 <= edad <= 65:
                 mensaje = "Descuento especiales"
                 descuento = valor_cotizado*(0.35)
             else:

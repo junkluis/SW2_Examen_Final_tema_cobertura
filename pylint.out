@@ -1,0 +1,6 @@
+************* Module src.descuento
+src\descuento.py:6: [R0912(too-many-branches), calcular_descuento] Too many branches (15/12)
+
+------------------------------------------------------------------
+Your code has been rated at 9.89/10 (previous run: 6.70/10, +3.19)
+

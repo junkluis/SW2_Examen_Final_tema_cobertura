@@ -29,7 +29,7 @@ class TestDescuentos(unittest.TestCase):
         ''' Caso de prueba '''
         returned = descuentos.calcular_descuento(19, 600, -1)
         self.assertEqual(returned, ('Descuento no valido', 0))
-        
+
     def test_clientes_menor_5000_1(self):
         ''' Caso de prueba '''
         returned = descuentos.calcular_descuento(27, 600, 0)
@@ -56,54 +56,54 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(returned, ('Descuento clientes iniciales', 160))
 
     def test_familias_dependientes_mayor_6(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(28, 1200, 6)
-    	self.assertEqual(returned, ('Descuento para familias', 720.0000000000001))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(28, 1200, 6)
+        self.assertEqual(returned, ('Descuento para familias', 720.0000000000001))
 
     def test_familias_dependientes_menor_6(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(28, 1200, 5)
-    	self.assertEqual(returned, ('Descuento para familias', 300))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(28, 1200, 5)
+        self.assertEqual(returned, ('Descuento para familias', 300))
 
     def test_familias_edad(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(35, 1200, 1)
-    	self.assertEqual(returned, ('Descuento para familias', 60))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(35, 1200, 1)
+        self.assertEqual(returned, ('Descuento para familias', 60))
 
     def test_especiales(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(50, 1200, 1)
-    	self.assertEqual(returned, ('Descuento especiales', 420))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(50, 1200, 1)
+        self.assertEqual(returned, ('Descuento especiales', 420))
 
     def test_no_aplica(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(28, 1100, 1)
-    	self.assertEqual(returned, ('No aplica', 0))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(28, 1100, 1)
+        self.assertEqual(returned, ('No aplica', 0))
 
     def test_no_aplica1(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(34, 1100, 1)
-    	self.assertEqual(returned, ('No aplica', 0))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(34, 1100, 1)
+        self.assertEqual(returned, ('No aplica', 0))
 
     def test_mayores_edad_mayor_80(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(80, 1100, 1)
-    	self.assertEqual(returned, ('Descuento para mayores de edad', 275))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(80, 1100, 1)
+        self.assertEqual(returned, ('Descuento para mayores de edad', 275))
 
     def test_mayores_edad_mayor_80_1(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(80, 3000, 1)
-    	self.assertEqual(returned, ('Descuento para mayores de edad', 1500))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(80, 3000, 1)
+        self.assertEqual(returned, ('Descuento para mayores de edad', 1500))
 
     def test_mayores_edad_dependientes(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(70, 2000, 0)
-    	self.assertEqual(returned, ('Descuento para mayores de edad', 500))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(70, 2000, 0)
+        self.assertEqual(returned, ('Descuento para mayores de edad', 500))
 
     def test_mayores_edad_dependientes1(self):
-    	''' Caso de prueba '''
-    	returned = descuentos.calcular_descuento(70, 3000, 0)
-    	self.assertEqual(returned, ('Descuento para mayores de edad', 1500))
+        ''' Caso de prueba '''
+        returned = descuentos.calcular_descuento(70, 3000, 0)
+        self.assertEqual(returned, ('Descuento para mayores de edad', 1500))
 
 
 
