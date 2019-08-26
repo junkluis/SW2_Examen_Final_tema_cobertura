@@ -88,7 +88,7 @@ class TestDescuentos(unittest.TestCase):
             85, valor_cotizado, dependientes)
         self.assertEqual(mensaje, 'Descuento para mayores de edad')
         self.assertEqual(descuento, valor_cotizado*0.25)
-    
+
     def test_mayor_edad_2(self):
         ''' Caso de prueba '''
         valor_cotizado = 2500
