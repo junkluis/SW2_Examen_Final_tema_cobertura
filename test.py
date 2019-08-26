@@ -21,7 +21,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertNotEqual(20, descuento1)
         mensaje2, descuento2 = descuentos.calcular_descuento(40, 1001, 5)
         self.assertEqual('Descuento para familias', mensaje2)
-        self.assertEqual(100, descuento2)
+        self.assertEqual(250.25, descuento2)
         self.assertEqual('', '')
 
 if __name__ == '__main__':
