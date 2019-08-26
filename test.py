@@ -53,12 +53,22 @@ class TestDescuentos(unittest.TestCase):
         edad = 50
         valor_cotizado = 1001
         dependientes = 5
-        descuento_esperado = valor_cotizado*(0.05*dependientes)
+        descuento_esperado = valor_cotizado*(0.35)
         msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
 
+    def test_calcular_descuento_no_aplica(self):
+        msj_esperado = "No aplica"
+        edad = 76
+        valor_cotizado = 1001
+        dependientes = 5
+        descuento_esperado = 0
+        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+
+        self.assertEqual(msj, msj_esperado)
+        self.assertEqual(descuento, descuento_esperado)
 
 
 if __name__ == '__main__':
