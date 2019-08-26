@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826092944" tests="12" time="0.010">
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_clientes1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_aplica" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido3" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad2" time="0.010">
+		<error message="Lists differ: ['Descuento para mayores de edad', 1200.0] != ['Descuento para mayores de edad', 600.0]
+
+First differing element 1:
+1200.0
+600.0
+
+- ['Descuento para mayores de edad', 1200.0]
+?                                    ^^
+
++ ['Descuento para mayores de edad', 600.0]
+?                                    ^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 88, in test_descuento_mayores_edad2
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+AssertionError: Lists differ: ['Descuento para mayores de edad', 1200.0] != ['Descuento para mayores de edad', 600.0]
+
+First differing element 1:
+1200.0
+600.0
+
+- ['Descuento para mayores de edad', 1200.0]
+?                                    ^^
+
++ ['Descuento para mayores de edad', 600.0]
+?                                    ^
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
