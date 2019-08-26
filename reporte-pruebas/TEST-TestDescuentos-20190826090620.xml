@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826090620" tests="9" time="0.000">
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_aplica" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000">
+		<error message="name 'descuento' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 23, in test_descuento1
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento,mensaje_esperado])
+NameError: name 'descuento' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

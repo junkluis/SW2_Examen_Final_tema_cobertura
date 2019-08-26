@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<testsuite errors="3" failures="0" name="TestDescuentos-20190826091247" tests="9" time="0.000">
+	<testcase classname="TestDescuentos" name="test_descuento1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_mayores_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_no_aplica" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias2" time="0.000">
+		<error message="Lists differ: ['Descuento para familias', 720.0000000000001] != ['Descuento para familias', 120.0]
+
+First differing element 1:
+720.0000000000001
+120.0
+
+- ['Descuento para familias', 720.0000000000001]
+?                             ^    ------------
+
++ ['Descuento para familias', 120.0]
+?                             ^
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 50, in test_descuento_familias2
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+AssertionError: Lists differ: ['Descuento para familias', 720.0000000000001] != ['Descuento para familias', 120.0]
+
+First differing element 1:
+720.0000000000001
+120.0
+
+- ['Descuento para familias', 720.0000000000001]
+?                             ^    ------------
+
++ ['Descuento para familias', 120.0]
+?                             ^
+
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido1" time="0.000">
+		<error message="Lists differ: ['Descuento no valido', 0] != ['Descuento no valido', 120.0]
+
+First differing element 1:
+0
+120.0
+
+- ['Descuento no valido', 0]
++ ['Descuento no valido', 120.0]
+?                         ++++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 88, in test_descuento_no_valido1
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+AssertionError: Lists differ: ['Descuento no valido', 0] != ['Descuento no valido', 120.0]
+
+First differing element 1:
+0
+120.0
+
+- ['Descuento no valido', 0]
++ ['Descuento no valido', 120.0]
+?                         ++++
+
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_descuento_no_valido2" time="0.000">
+		<error message="Lists differ: ['Descuento no valido', 0] != ['Descuento no valido', 80.0]
+
+First differing element 1:
+0
+80.0
+
+- ['Descuento no valido', 0]
++ ['Descuento no valido', 80.0]
+?                         +++
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 97, in test_descuento_no_valido2
+    self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+AssertionError: Lists differ: ['Descuento no valido', 0] != ['Descuento no valido', 80.0]
+
+First differing element 1:
+0
+80.0
+
+- ['Descuento no valido', 0]
++ ['Descuento no valido', 80.0]
+?                         +++
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
