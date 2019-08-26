@@ -45,6 +45,21 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(msj_esperado, mensaje)
         self.assertEqual(descuento_esperado,descuento)
 
+
+    def test_comprobar_variables7(self): 
+        mensaje, descuento = calcular_descuento(90,10000,0)
+        msj_esperado = 'Descuento para mayores de edad'
+        descuento_esperado=5000.0
+        self.assertEqual(msj_esperado, mensaje)
+        self.assertEqual(descuento_esperado,descuento)
+
+    def test_comprobar_variables8(self): 
+        mensaje, descuento = calcular_descuento(81,2001,0)
+        msj_esperado = 'Descuento para mayores de edad'
+        descuento_esperado=1000.5
+        self.assertEqual(msj_esperado, mensaje)
+        self.assertEqual(descuento_esperado,descuento)
+
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
 

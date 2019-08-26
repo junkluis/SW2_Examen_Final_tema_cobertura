@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826102316" tests="6" time="0.016">
+	<testcase classname="TestDescuentos" name="test_comprobar_variables" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables3" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables4" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables5" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables6" time="0.016">
+		<error message="50000 != 5000.0" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 54, in test_comprobar_variables6
+    self.assertEqual(descuento_esperado,descuento)
+AssertionError: 50000 != 5000.0
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

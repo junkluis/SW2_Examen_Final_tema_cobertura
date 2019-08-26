@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="TestDescuentos-20190826102448" tests="8" time="0.000">
+	<testcase classname="TestDescuentos" name="test_comprobar_variables" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables3" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables4" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables5" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables6" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables7" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_comprobar_variables8" time="0.000">
+		<error message="'Descuento para mayores de edad' != 'Descuento no valido'
+- Descuento para mayores de edad
++ Descuento no valido
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 60, in test_comprobar_variables8
+    self.assertEqual(msj_esperado, mensaje)
+AssertionError: 'Descuento para mayores de edad' != 'Descuento no valido'
+- Descuento para mayores de edad
++ Descuento no valido
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
