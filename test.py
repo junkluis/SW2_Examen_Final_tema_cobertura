@@ -19,7 +19,7 @@ class TestDescuentos(unittest.TestCase):
         mensaje1, descuento1 = descuentos.calcular_descuento(19, 751, 0)
         self.assertEqual('Descuento clientes iniciales', mensaje1)
         self.assertNotEqual(20, descuento1)
-        mensaje2, descuento2 = descuentos.calcular_descuento(36, 1000, 1)
+        mensaje2, descuento2 = descuentos.calcular_descuento(40, 1000, 5)
         self.assertEqual('Descuento para familias', mensaje2)
         self.assertEqual(100, descuento2)
         self.assertEqual('', '')
