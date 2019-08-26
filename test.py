@@ -96,6 +96,15 @@ class TestDescuentos(unittest.TestCase):
         descuento_esperado = valor_cotizado*0.02
         self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
 
+    def test_descuento_clientes1(self):
+        edad =70
+        valor_cotizado = 4000
+        dependientes = 1
+        mensaje_obtenido, descuento_obtenido=descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
+        mensaje_esperado= "Descuento para clientes"
+        descuento_esperado = valor_cotizado*0.01
+        self.assertEqual([mensaje_obtenido,descuento_obtenido],[mensaje_esperado,descuento_esperado])
+
     def test_descuento_no_valido1(self):
         edad =18
         valor_cotizado = 600
