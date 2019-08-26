@@ -13,7 +13,8 @@ class TestDescuentos(unittest.TestCase):
 
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
-        self.assertEqual('Descuento no valido', descuentos.calcular_descuento(17, 500, 0))
+        mensaje, descuento = descuentos.calcular_descuento(17, 500, 0)
+        self.assertEqual('Descuento no valido', mensaje)
 
         self.assertEqual('', '')
 
