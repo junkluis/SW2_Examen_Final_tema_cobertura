@@ -15,6 +15,11 @@ class TestDescuentos(unittest.TestCase):
         ''' Caso de prueba '''
         self.assertEqual('', '')
 
+    def test_menor_edad(self):
+        '''Caso 1: Menor de edad'''
+        mensaje, descuento = descuentos.calcular_descuento(17, 1000, 0)
+        self.assertEqual('Descuento no valido', mensaje)
+        self.assertEqual(0, descuento)
 
 
 if __name__ == '__main__':
