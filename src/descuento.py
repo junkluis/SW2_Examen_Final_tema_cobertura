@@ -19,42 +19,38 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
 
 #pruebas
 
-            if( (35<=edad<50 and dependientes>0) or (dependientes>=4)  ):
+            if (35 <= edad < 50 and dependientes > 0) or dependientes >= 4:
                 mensaje = "Descuento para familias"
-                if (dependientes>=6):
-                    descuento = valor_cotizado*(0.1*dependientes)
+                if dependientes >= 6:
+                    descuento = valor_cotizado * (0.1 * dependientes)
                 else:
-                    descuento = valor_cotizado*(0.05*dependientes)
+                    descuento = valor_cotizado * (0.05 * dependientes)
 
-            elif( 50<=edad<=65):
+            elif 50 <= edad <= 65:
                 mensaje = "Descuento especiales"
-                descuento = valor_cotizado*(0.35)
+                descuento = valor_cotizado * 0.35
 
             else:
                 mensaje = "No aplica"
                 descuento = 0               
 
-        elif( (edad>=80) or (edad>65 and dependientes==0) ):
+        elif edad >= 80 or edad > 65 and dependientes == 0:
             mensaje = "Descuento para mayores de edad"
-            if(valor_cotizado >2000):
-                descuento = valor_cotizado*(0.5)
+            if valor_cotizado > 2000:
+                descuento = valor_cotizado * 0.5
             else:
-                descuento = valor_cotizado*(0.25)
+                descuento = valor_cotizado * 0.25
 
         else:
             mensaje = "Descuento para clientes"
-            if(valor_cotizado >= 5000):
-                descuento = valor_cotizado*(0.02)
+            if valor_cotizado >= 5000:
+                descuento = valor_cotizado * 0.02
             else:
-                descuento = valor_cotizado*(0.01)
+                descuento = valor_cotizado * 0.01
             
 
     else:
         mensaje = "Descuento no valido"
         descuento = 0
-        descuento = 0
 
     return mensaje, descuento
-
-
-
