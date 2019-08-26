@@ -3,9 +3,8 @@
 
 from __future__ import unicode_literals
 
-
+"""Calcular el descuento considerando la edad, numero de dependientes y valor cotizado"""
 def calcular_descuento(edad, valor_cotizado, dependientes):
-    #Calcular el descuento considerando la edad, numero de dependientes y valor cotizado
     mensaje = ""
     descuento = 0
     if(edad > 18 and valor_cotizado > 500 and dependientes >= 0):
