@@ -1,4 +1,4 @@
-# SW2 Examen Final Tema - Cobertura de código
+# SW2 Examen Final Tema - Cobertura de código - ALFONSO PULIDO CARRERA
 
 ## Instrucciones:
 
