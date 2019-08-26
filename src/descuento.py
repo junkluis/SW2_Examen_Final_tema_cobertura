@@ -30,7 +30,8 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
 
             else:
                 mensaje = "No aplica"
-                descuento = 0               
+                descuento = 0
+
         elif((edad >= 80) or (edad > 65 and dependientes == 0)):
             mensaje = "Descuento para mayores de edad"
             if valor_cotizado > 2000:
@@ -51,6 +52,3 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
         descuento = 0
 
     return mensaje, descuento
-
-
-
