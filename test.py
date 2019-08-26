@@ -13,7 +13,10 @@ class TestDescuentos(unittest.TestCase):
 
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
-        self.assertEqual('', '')
+
+        msj, desc = descuentos.calcular_descuento(19, 800, 1)
+        self.assertEqual('Descuento clientes iniciales', msj)
+        self.assertEqual(800*0.2, desc)
 
 
 
