@@ -10,12 +10,13 @@ import src.descuento as descuentos
 
 class TestDescuentos(unittest.TestCase):
     ''' Pruebas para calculo del descuento para clientes '''
-
+    
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
         self.assertEqual('', '')
 
     def test_calcular_descuento_clientes_iniciales(self):
+        ''' Caso de prueba '''
         msj_esperado = "Descuento clientes iniciales"
         edad = 19
         valor_cotizado = 751
