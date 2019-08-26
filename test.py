@@ -13,7 +13,7 @@ class TestDescuentos(unittest.TestCase):
 
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
-        self.assertEqual('', '')
+        self.assertEqual('',  '')
 
 
 
