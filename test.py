@@ -21,7 +21,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 751
         dependientes = 0
         descuento_esperado = valor_cotizado*0.2
-        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -32,7 +32,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 6
         descuento_esperado = valor_cotizado*(0.1*dependientes)
-        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -43,7 +43,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 5
         descuento_esperado = valor_cotizado*(0.05*dependientes)
-        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -54,7 +54,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 5
         descuento_esperado = valor_cotizado*(0.35)
-        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -65,11 +65,21 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 5
         descuento_esperado = 0
-        msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
 
+    def test_calcular_descuento_mayores_edad(self):
+        msj_esperado = "Descuento para mayores de edad"
+        edad = 66
+        valor_cotizado = 1001
+        dependientes = 0
+        descuento_esperado = 0
+        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+
+        self.assertEqual(msj, msj_esperado)
+        self.assertEqual(descuento, descuento_esperado)
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
