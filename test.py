@@ -42,7 +42,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento no valido", 0), retorno)
 
-    def test_validos_uno_uno(self):
+    def test_valido_cliente_inicial(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 22
         valor_cotizado = 600
@@ -51,7 +51,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento clientes iniciales", valor_cotizado*(0.2)), retorno)
 
-    def test_validos_uno_dos(self):
+    def test_valido_cliente_incial_dos(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 20
         valor_cotizado = 800
@@ -60,7 +60,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento clientes iniciales", valor_cotizado*(0.2)), retorno)
 
-    def test_validos_dos_uno_dos(self):
+    def test_valido_familias(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 40
         valor_cotizado = 1100
@@ -69,7 +69,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento para familias", valor_cotizado*(0.05*dependientes)), retorno)
 
-    def test_validos_dos_uno_uno(self):
+    def test_valido_familia_dos(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 58
         valor_cotizado = 1100
@@ -78,7 +78,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento para familias", valor_cotizado*(0.1*dependientes)), retorno)
 
-    def test_validos_dos_dos(self):
+    def test_valido_especiales(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 58
         valor_cotizado = 1100
@@ -87,7 +87,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento especiales", valor_cotizado*(0.35)), retorno)
 
-    def test_validos_dos_tres(self):
+    def test_valido_no_aplica(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 31
         valor_cotizado = 1100
@@ -96,7 +96,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("No aplica", 0), retorno)
 
-    def test_validos_tres_uno_uno(self):
+    def test_valido_mayores_edad(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 85
         valor_cotizado = 2010
@@ -105,7 +105,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento para mayores de edad", valor_cotizado*(0.5)), retorno)
 
-    def test_validos_tres_dos_dos(self):
+    def test_valido_mayores_edad_dos(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 70
         valor_cotizado = 1990
@@ -114,7 +114,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento para mayores de edad", valor_cotizado*(0.25)), retorno)
 
-    def test_validos_cuatro_uno(self):
+    def test_valido_descuento_clientes(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 70
         valor_cotizado = 5010
@@ -123,7 +123,7 @@ class TestDescuentos(unittest.TestCase):
         print(retorno)
         self.assertEqual(("Descuento para clientes", valor_cotizado*(0.02)), retorno)
 
-    def test_validos_cuatro_dos(self):
+    def test_valido_descuento_clientes_dos(self):
         '''Prueba en caso de dependientes inválidos'''
         edad = 70
         valor_cotizado = 4990
@@ -134,4 +134,3 @@ class TestDescuentos(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
-    
