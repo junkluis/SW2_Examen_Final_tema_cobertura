@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<testsuite errors="5" failures="0" name="TestDescuentos-20190826092411" tests="9" time="0.004">
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_clientes_iniciales" time="0.002"/>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_familias" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_familias_pequenias" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_especiales" time="0.001">
+		<error message="'Descuento para familias' != 'Descuento especiales'
+- Descuento para familias
++ Descuento especiales
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 59, in test_calcular_descuento_especiales
+    self.assertEqual(msj, msj_esperado)
+AssertionError: 'Descuento para familias' != 'Descuento especiales'
+- Descuento para familias
++ Descuento especiales
+
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_mayores_edad_1" time="0.000">
+		<error message="'module' object is not callable" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 79, in test_calcular_descuento_mayores_edad_1
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+TypeError: 'module' object is not callable
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_mayores_edad_2" time="0.000">
+		<error message="'module' object is not callable" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 90, in test_calcular_descuento_mayores_edad_2
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+TypeError: 'module' object is not callable
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_no_aplica" time="0.000">
+		<error message="'Descuento para clientes' != 'No aplica'
+- Descuento para clientes
++ No aplica
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 70, in test_calcular_descuento_no_aplica
+    self.assertEqual(msj, msj_esperado)
+AssertionError: 'Descuento para clientes' != 'No aplica'
+- Descuento para clientes
++ No aplica
+
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_para_clientes" time="0.000">
+		<error message="'module' object is not callable" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 101, in test_calcular_descuento_para_clientes
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+TypeError: 'module' object is not callable
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

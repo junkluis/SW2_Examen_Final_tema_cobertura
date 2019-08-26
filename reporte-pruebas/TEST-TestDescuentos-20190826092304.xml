@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<testsuite errors="8" failures="0" name="TestDescuentos-20190826092304" tests="9" time="0.003">
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_clientes_iniciales" time="0.003">
+		<error message="name 'calcular_descuento' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 24, in test_calcular_descuento_clientes_iniciales
+    msj, descuento = calcular_descuento(edad, valor_cotizado, dependientes)
+NameError: name 'calcular_descuento' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_especiales" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 57, in test_calcular_descuento_especiales
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_familias" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 35, in test_calcular_descuento_familias
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_familias_pequenias" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 46, in test_calcular_descuento_familias_pequenias
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_mayores_edad_1" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 79, in test_calcular_descuento_mayores_edad_1
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_mayores_edad_2" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 90, in test_calcular_descuento_mayores_edad_2
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_no_aplica" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 68, in test_calcular_descuento_no_aplica
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_calcular_descuento_para_clientes" time="0.000">
+		<error message="name 'descuentos' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 101, in test_calcular_descuento_para_clientes
+    msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+NameError: name 'descuentos' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

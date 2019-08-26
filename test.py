@@ -21,7 +21,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 751
         dependientes = 0
         descuento_esperado = valor_cotizado*0.2
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -32,7 +32,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 6
         descuento_esperado = valor_cotizado*(0.1*dependientes)
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -43,7 +43,7 @@ class TestDescuentos(unittest.TestCase):
         valor_cotizado = 1001
         dependientes = 5
         descuento_esperado = valor_cotizado*(0.05*dependientes)
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
@@ -52,31 +52,64 @@ class TestDescuentos(unittest.TestCase):
         msj_esperado = "Descuento especiales"
         edad = 50
         valor_cotizado = 1001
-        dependientes = 5
+        dependientes = 3
         descuento_esperado = valor_cotizado*(0.35)
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_no_aplica(self):
         msj_esperado = "No aplica"
-        edad = 76
+        edad = 49
         valor_cotizado = 1001
-        dependientes = 5
+        dependientes = 0
         descuento_esperado = 0
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
 
-    def test_calcular_descuento_mayores_edad(self):
+    def test_calcular_descuento_mayores_edad_1(self):
         msj_esperado = "Descuento para mayores de edad"
         edad = 66
-        valor_cotizado = 1001
+        valor_cotizado = 2001
         dependientes = 0
-        descuento_esperado = 0
-        msj, descuento = descuentos(edad, valor_cotizado, dependientes)
+        descuento_esperado = valor_cotizado*(0.5)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
+
+        self.assertEqual(msj, msj_esperado)
+        self.assertEqual(descuento, descuento_esperado)
+
+    def test_calcular_descuento_mayores_edad_2(self):
+        msj_esperado = "Descuento para mayores de edad"
+        edad = 66
+        valor_cotizado = 2000
+        dependientes = 0
+        descuento_esperado = valor_cotizado*(0.25)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
+
+        self.assertEqual(msj, msj_esperado)
+        self.assertEqual(descuento, descuento_esperado)
+
+    def test_calcular_descuento_para_clientes_1(self):
+        msj_esperado = "Descuento para clientes"
+        edad = 66
+        valor_cotizado = 5000
+        dependientes = 1
+        descuento_esperado = valor_cotizado*(0.02)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
+
+        self.assertEqual(msj, msj_esperado)
+        self.assertEqual(descuento, descuento_esperado)
+
+    def test_calcular_descuento_para_clientes_2(self):
+        msj_esperado = "Descuento para clientes"
+        edad = 66
+        valor_cotizado = 4999
+        dependientes = 1
+        descuento_esperado = valor_cotizado*(0.01)
+        msj, descuento = descuentos.calcular_descuento(edad, valor_cotizado, dependientes)
 
         self.assertEqual(msj, msj_esperado)
         self.assertEqual(descuento, descuento_esperado)
