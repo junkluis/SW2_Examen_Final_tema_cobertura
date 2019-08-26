@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<testsuite errors="2" failures="0" name="TestDescuentos-20190826092624" tests="11" time="0.009">
+	<testcase classname="TestDescuentos" name="test_descuento_clientes_1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias_no_aplica" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_clientes" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_clientes_2" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_mayores_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_mayores_edad_2" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_menor_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias" time="0.004">
+		<error message="200.0 != 400.0" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 40, in test_descuento_familias
+    self.assertEqual(200.0000, descuento)
+AssertionError: 200.0 != 400.0
+]]>		</error>
+	</testcase>
+	<testcase classname="TestDescuentos" name="test_descuento_familias_mayor_6" time="0.002">
+		<error message="400.0 != 2400.0000000000005" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "test.py", line 46, in test_descuento_familias_mayor_6
+    self.assertEqual(400.000, descuento)
+AssertionError: 400.0 != 2400.0000000000005
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

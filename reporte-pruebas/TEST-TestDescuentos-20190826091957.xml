@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestDescuentos-20190826091957" tests="11" time="0.002">
+	<testcase classname="TestDescuentos" name="test_descuento_clientes_1" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias_mayor_6" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_descuento_familias_no_aplica" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_clientes" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_clientes_2" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_especiales" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_mayores_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_descuentos_mayores_edad_2" time="0.001"/>
+	<testcase classname="TestDescuentos" name="test_menor_edad" time="0.000"/>
+	<testcase classname="TestDescuentos" name="test_nombre_casos_prueba" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
