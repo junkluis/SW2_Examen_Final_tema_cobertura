@@ -10,13 +10,12 @@ import src.descuento as descuentos
 
 class TestDescuentos(unittest.TestCase):
     ''' Pruebas para calculo del descuento para clientes '''
-    
     def test_nombre_casos_prueba(self):
         ''' Caso de prueba '''
         self.assertEqual('', '')
 
     def test_calcular_descuento_clientes_iniciales(self):
-        ''' Caso de prueba '''
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento clientes iniciales"
         edad = 19
         valor_cotizado = 751
@@ -28,6 +27,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_familias(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para familias"
         edad = 35
         valor_cotizado = 1001
@@ -39,6 +39,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_familias_pequenias(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para familias"
         edad = 35
         valor_cotizado = 1001
@@ -50,6 +51,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_especiales(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento especiales"
         edad = 50
         valor_cotizado = 1001
@@ -61,6 +63,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_no_aplica(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "No aplica"
         edad = 49
         valor_cotizado = 1001
@@ -72,6 +75,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_mayores_edad_1(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para mayores de edad"
         edad = 66
         valor_cotizado = 2001
@@ -83,6 +87,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_mayores_edad_2(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para mayores de edad"
         edad = 66
         valor_cotizado = 2000
@@ -94,6 +99,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_para_clientes_1(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para clientes"
         edad = 66
         valor_cotizado = 5000
@@ -105,6 +111,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(descuento, descuento_esperado)
 
     def test_calcular_descuento_para_clientes_2(self):
+        ''' Prueba de descuento de clientes iniciales'''
         msj_esperado = "Descuento para clientes"
         edad = 66
         valor_cotizado = 4999
