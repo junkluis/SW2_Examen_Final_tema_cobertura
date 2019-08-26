@@ -17,7 +17,7 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
 
         elif( (valor_cotizado>1000) and (27<edad<=65)):
 
-#pruebas
+            #pruebas
 
             if( (35<=edad<50 and dependientes>0) or (dependientes>=4)  ):
                 mensaje = "Descuento para familias"
