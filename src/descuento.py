@@ -8,14 +8,13 @@ def calcular_descuento(edad, valor_cotizado, dependientes):
     """Calcular el descuento considerando la edad, numero de dependientes y valor cotizado"""
     mensaje = ""
     descuento = 0
-    EDAD = edad
+    # EDAD = edad
     if (edad > 18 and valor_cotizado > 500 and dependientes >= 0):
         if((18 < edad < 27) or (750 < valor_cotizado < 1000)):
             mensaje = "Descuento clientes iniciales"
             descuento = valor_cotizado*(0.2)
 
         elif ((valor_cotizado > 1000) and (27 < edad <= 65)):
-
 #pruebas
 
             if((35 <= edad < 50 and dependientes > 0) or (dependientes >= 4)):
