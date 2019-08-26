@@ -45,5 +45,10 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual('Descuento para familias', mensaje)
         self.assertEqual(3000.0000000000005, descuento)
 
+    def test_descuentos_especiales(self):
+        mensaje, descuento = descuentos.calcular_descuento(50, 2000, 1)
+        self.assertEqual('Descuento especiales', mensaje)
+        self.assertEqual(700, descuento)
+
 if __name__ == '__main__':
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='reporte-pruebas'))
