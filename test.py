@@ -38,7 +38,7 @@ class TestDescuentos(unittest.TestCase):
         mensaje, descuento = descuentos.calcular_descuento(35, 5000, 1)
         self.assertEqual('Descuento para familias', mensaje)
         self.assertEqual(250, descuento)
-    
+
     def test_descuento_familias_mayor_6(self):
         '''Caso 5: Descuento familias mayor a 6 dependientes'''
         mensaje, descuento = descuentos.calcular_descuento(35, 5000, 6)
@@ -46,26 +46,31 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual(3000.0000000000005, descuento)
 
     def test_descuentos_especiales(self):
+        '''Caso 6: Descuentos especiales'''
         mensaje, descuento = descuentos.calcular_descuento(50, 2000, 1)
         self.assertEqual('Descuento especiales', mensaje)
         self.assertEqual(700, descuento)
 
     def test_descuentos_mayores_edad(self):
+        '''Caso 7: Descuento para adultos mayores (1)'''
         mensaje, descuento = descuentos.calcular_descuento(80, 2000, 1)
         self.assertEqual('Descuento para mayores de edad', mensaje)
         self.assertEqual(500, descuento)
 
     def test_descuentos_mayores_edad_2(self):
+        '''Caso 8: Descuento para adultos mayores (2)'''
         mensaje, descuento = descuentos.calcular_descuento(66, 3000, 0)
         self.assertEqual('Descuento para mayores de edad', mensaje)
         self.assertEqual(1500, descuento)
 
     def test_descuentos_clientes(self):
+        '''Caso 9: Descuento para clientes (Valor cotizado < 5000)'''
         mensaje, descuento = descuentos.calcular_descuento(66, 2000, 1)
         self.assertEqual('Descuento para clientes', mensaje)
         self.assertEqual(20, descuento)
     
     def test_descuentos_clientes_2(self):
+        '''Caso 10: Descuento para clientes (Valor cotizado >= 5000)'''
         mensaje, descuento = descuentos.calcular_descuento(66, 5000, 1)
         self.assertEqual('Descuento para clientes', mensaje)
         self.assertEqual(100, descuento)
