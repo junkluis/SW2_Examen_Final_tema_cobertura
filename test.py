@@ -68,7 +68,7 @@ class TestDescuentos(unittest.TestCase):
         mensaje, descuento = descuentos.calcular_descuento(66, 2000, 1)
         self.assertEqual('Descuento para clientes', mensaje)
         self.assertEqual(20, descuento)
-    
+
     def test_descuentos_clientes_2(self):
         '''Caso 10: Descuento para clientes (Valor cotizado >= 5000)'''
         mensaje, descuento = descuentos.calcular_descuento(66, 5000, 1)
