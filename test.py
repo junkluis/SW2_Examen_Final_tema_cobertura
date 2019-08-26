@@ -7,7 +7,6 @@ import xmlrunner
 import src.descuento as descuentos
 
 
-
 class TestDescuentos(unittest.TestCase):
     ''' Pruebas para calculo del descuento para clientes '''
 
@@ -21,7 +20,6 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual("Descuento no valido", msj)
         self.assertEqual(0, desc)
 
-
     def test_descuento_clientes_iniciales_por_edad(self):
         ''' Descuento para clientes iniciales por edad '''
         edad = 19
@@ -30,7 +28,7 @@ class TestDescuentos(unittest.TestCase):
         msj, desc = descuentos.calcular_descuento(edad, valor, dependientes)
 
         self.assertEqual("Descuento clientes iniciales", msj)
-        self.assertEqual(valor*0.2, desc)
+        self.assertEqual(valor * 0.2, desc)
 
     def test_descuento_clientes_iniciales_por_valor(self):
         ''' Descuento para clientes iniciales por valor '''
@@ -40,7 +38,7 @@ class TestDescuentos(unittest.TestCase):
         msj, desc = descuentos.calcular_descuento(edad, valor, dependientes)
 
         self.assertEqual("Descuento clientes iniciales", msj)
-        self.assertEqual(valor*0.2, desc)
+        self.assertEqual(valor * 0.2, desc)
 
     def test_descuento_familias_pocos_dependientes(self):
         ''' Descuento para familias con < 4 dependients '''
@@ -72,7 +70,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual("Descuento especiales", msj)
         self.assertEqual(valor * 0.35, desc)
 
-    def test_descuento_descuento_no_aplica(self):
+    def test_descuento_no_aplica(self):
         ''' Descuento no valido'''
         edad = 38
         valor = 2000
@@ -82,7 +80,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual("No aplica", msj)
         self.assertEqual(0, desc)
 
-    def test_descuento_descuento_mayores_de_edad_mayor_valor(self):
+    def test_descuento_mayores_de_edad_mayor_valor(self):
         ''' Descuento para mayores de edad con cotizacion > 2000'''
         edad = 66
         valor = 2001
@@ -92,7 +90,7 @@ class TestDescuentos(unittest.TestCase):
         self.assertEqual("Descuento para mayores de edad", msj)
         self.assertEqual(valor * 0.5, desc)
 
-    def test_descuento_descuento_mayores_de_edad_menor_valor(self):
+    def test_descuento_mayores_de_edad_menor_valor(self):
         ''' Descuento para mayores de edad con cotizacion <= 2000'''
         edad = 66
         valor = 2000
@@ -101,6 +99,26 @@ class TestDescuentos(unittest.TestCase):
 
         self.assertEqual("Descuento para mayores de edad", msj)
         self.assertEqual(valor * 0.25, desc)
+
+    def test_descuento_clientes_mayor_valor(self):
+        ''' Descuento para clientes con valor cotizado >= 5000'''
+        edad = 66
+        valor = 5000
+        dependientes = 1
+        msj, desc = descuentos.calcular_descuento(edad, valor, dependientes)
+
+        self.assertEqual("Descuento para clientes", msj)
+        self.assertEqual(valor * 0.02, desc)
+
+    def test_descuento_clientes_menor_valor(self):
+        ''' Descuento para clientes con valor cotizado < 5000'''
+        edad = 66
+        valor = 4999
+        dependientes = 1
+        msj, desc = descuentos.calcular_descuento(edad, valor, dependientes)
+
+        self.assertEqual("Descuento para clientes", msj)
+        self.assertEqual(valor * 0.01, desc)
 
 
 if __name__ == '__main__':
